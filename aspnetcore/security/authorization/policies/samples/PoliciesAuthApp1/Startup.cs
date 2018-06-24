@@ -57,8 +57,8 @@ namespace PoliciesAuthApp1
                 options.AddPolicy("BadgeEntry", policy =>
                     policy.RequireAssertion(context =>
                         context.User.HasClaim(c =>
-                            (c.Type == ClaimTypes.BadgeId ||
-                             c.Type == ClaimTypes.TemporaryBadgeId) &&
+                            (c.Type == "BadgeId" ||
+                             c.Type == "TemporaryBadgeId") &&
                              c.Issuer == "https://microsoftsecurity")));
             });
 

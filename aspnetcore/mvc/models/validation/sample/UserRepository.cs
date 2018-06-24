@@ -12,5 +12,10 @@ namespace MVCMovie.Controllers
             // In real world, adding a new email address would be a separate step. This would be a contains check.
             return _emailAddresses.Add(email);
         }
+
+        public bool VerifyName(string firstName, string lastName)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -61,7 +61,7 @@ namespace FileUploadSample.Controllers
             var boundary = MultipartRequestHelper.GetBoundary(
                 MediaTypeHeaderValue.Parse(Request.ContentType),
                 _defaultFormOptions.MultipartBoundaryLengthLimit);
-            var reader = new MultipartReader(boundary, HttpContext.Request.Body);
+            var reader = new MultipartReader(boundary.ToString(), HttpContext.Request.Body);
 
             var section = await reader.ReadNextSectionAsync();
             while (section != null)
@@ -104,7 +104,7 @@ namespace FileUploadSample.Controllers
                             {
                                 value = String.Empty;
                             }
-                            formAccumulator.Append(key, value);
+                            formAccumulator.Append(key.ToString(), value);
 
                             if (formAccumulator.ValueCount > _defaultFormOptions.ValueCountLimit)
                             {

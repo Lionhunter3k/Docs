@@ -11,7 +11,7 @@
         protected override Task HandleRequirementAsync(AuthorizationHandlerContext context,
                                                        BuildingEntryRequirement requirement)
         {
-            if (context.User.HasClaim(c => c.Type == ClaimTypes.BadgeId &&
+            if (context.User.HasClaim(c => c.Type == "BadgeId" &&
                                            c.Issuer == "http://microsoftsecurity"))
             {
                 context.Succeed(requirement);

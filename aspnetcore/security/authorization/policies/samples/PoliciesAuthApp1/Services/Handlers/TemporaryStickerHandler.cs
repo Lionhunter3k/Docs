@@ -11,7 +11,7 @@
         protected override Task HandleRequirementAsync(AuthorizationHandlerContext context, 
                                                        BuildingEntryRequirement requirement)
         {
-            if (context.User.HasClaim(c => c.Type == ClaimTypes.TemporaryBadgeId &&
+            if (context.User.HasClaim(c => c.Type == "TemporaryBadgeId" &&
                                            c.Issuer == "https://microsoftsecurity"))
             {
                 // We'd also check the expiration date on the sticker.
