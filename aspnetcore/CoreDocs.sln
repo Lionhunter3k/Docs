@@ -3,105 +3,105 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppSession", "..\fundamentals\app-state\sample\src\WebAppSessionDotNetCore2.0App\WebAppSession.csproj", "{19676770-7185-4894-A0F9-852AA44447AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppSession", "fundamentals\app-state\sample\src\WebAppSessionDotNetCore2.0App\WebAppSession.csproj", "{19676770-7185-4894-A0F9-852AA44447AE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigJson", "..\fundamentals\configuration\index\sample\ConfigJson\ConfigJson.csproj", "{D7539D8D-BB2C-4FE4-A4CB-5C902E3420CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigJson", "fundamentals\configuration\index\sample\ConfigJson\ConfigJson.csproj", "{D7539D8D-BB2C-4FE4-A4CB-5C902E3420CE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomConfigurationProvider", "..\fundamentals\configuration\index\sample\CustomConfigurationProvider\CustomConfigurationProvider.csproj", "{22EB28AA-3D61-4D28-95BE-6A25ECBB304D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomConfigurationProvider", "fundamentals\configuration\index\sample\CustomConfigurationProvider\CustomConfigurationProvider.csproj", "{22EB28AA-3D61-4D28-95BE-6A25ECBB304D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InMemory", "..\fundamentals\configuration\index\sample\InMemory\InMemory.csproj", "{3D2E0C74-B6ED-428F-9A93-60936DADD793}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InMemory", "fundamentals\configuration\index\sample\InMemory\InMemory.csproj", "{3D2E0C74-B6ED-428F-9A93-60936DADD793}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InMemoryGetValue", "..\fundamentals\configuration\index\sample\InMemoryGetValue\InMemoryGetValue.csproj", "{A232C290-5AEA-48A2-85DA-CAD67FD9C21B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InMemoryGetValue", "fundamentals\configuration\index\sample\InMemoryGetValue\InMemoryGetValue.csproj", "{A232C290-5AEA-48A2-85DA-CAD67FD9C21B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObjectGraph", "..\fundamentals\configuration\index\sample\ObjectGraph\ObjectGraph.csproj", "{25661B51-343F-4693-82E0-EFAF5978FC53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObjectGraph", "fundamentals\configuration\index\sample\ObjectGraph\ObjectGraph.csproj", "{25661B51-343F-4693-82E0-EFAF5978FC53}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsingOptionsSample", "..\fundamentals\configuration\options\sample\UsingOptionsSample.csproj", "{C9F6D817-A5C5-4889-9EA7-7FFF6EBD96B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsingOptionsSample", "fundamentals\configuration\options\sample\UsingOptionsSample.csproj", "{C9F6D817-A5C5-4889-9EA7-7FFF6EBD96B1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ErrorHandlingSample", "..\fundamentals\error-handling\sample\ErrorHandlingSample.csproj", "{488D6478-ADF2-4DE1-B20D-B2614F7C3F72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ErrorHandlingSample", "fundamentals\error-handling\sample\ErrorHandlingSample.csproj", "{488D6478-ADF2-4DE1-B20D-B2614F7C3F72}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileProviderSample", "..\fundamentals\file-providers\sample\src\FileProviderSample\FileProviderSample.csproj", "{6F0A6D58-23DF-469B-9F91-A38B8D42F393}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileProviderSample", "fundamentals\file-providers\sample\src\FileProviderSample\FileProviderSample.csproj", "{6F0A6D58-23DF-469B-9F91-A38B8D42F393}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WatchConsole", "..\fundamentals\file-providers\sample\src\WatchConsole\WatchConsole.csproj", "{9B6E81BD-4169-4BC5-BA25-901A7F59ABFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WatchConsole", "fundamentals\file-providers\sample\src\WatchConsole\WatchConsole.csproj", "{9B6E81BD-4169-4BC5-BA25-901A7F59ABFE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Localization", "..\fundamentals\localization\sample\Localization\Localization.csproj", "{CF21C7DD-5948-48E6-9A1C-1860928F19FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Localization", "fundamentals\localization\sample\Localization\Localization.csproj", "{CF21C7DD-5948-48E6-9A1C-1860928F19FB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POLocalization", "..\fundamentals\localization\sample\POLocalization\POLocalization.csproj", "{630BBE30-CFDA-424F-9FB1-BE85AB0B7E67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POLocalization", "fundamentals\localization\sample\POLocalization\POLocalization.csproj", "{630BBE30-CFDA-424F-9FB1-BE85AB0B7E67}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoApi", "..\fundamentals\logging\index\sample\TodoApi.csproj", "{54B8701E-40B1-4954-AD81-192A3268C4A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoApi", "fundamentals\logging\index\sample\TodoApi.csproj", "{54B8701E-40B1-4954-AD81-192A3268C4A2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggerMessageSample", "..\fundamentals\logging\loggermessage\sample\LoggerMessageSample.csproj", "{491B81C3-CD46-4C8D-97CE-32FF46C10A74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggerMessageSample", "fundamentals\logging\loggermessage\sample\LoggerMessageSample.csproj", "{491B81C3-CD46-4C8D-97CE-32FF46C10A74}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiddlewareExtensibilitySample", "..\fundamentals\middleware\extensibility\sample\MiddlewareExtensibilitySample.csproj", "{366D3B9D-02B9-4049-BBE3-761EF7BEA685}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiddlewareExtensibilitySample", "fundamentals\middleware\extensibility\sample\MiddlewareExtensibilitySample.csproj", "{366D3B9D-02B9-4049-BBE3-761EF7BEA685}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiddlewareExtensibilitySampleThirdParty", "..\fundamentals\middleware\extensibility-third-party-container\sample\MiddlewareExtensibilitySampleThirdParty.csproj", "{A2EDB844-3E4A-4445-87BC-0DA42F534874}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiddlewareExtensibilitySampleThirdParty", "fundamentals\middleware\extensibility-third-party-container\sample\MiddlewareExtensibilitySampleThirdParty.csproj", "{A2EDB844-3E4A-4445-87BC-0DA42F534874}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Culture", "..\fundamentals\middleware\index\sample\Culture\Culture.csproj", "{A139C7F9-941C-4F97-90BD-254713A4462C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Culture", "fundamentals\middleware\index\sample\Culture\Culture.csproj", "{A139C7F9-941C-4F97-90BD-254713A4462C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chain", "..\fundamentals\middleware\index\sample\Chain\Chain.csproj", "{B9420020-947F-4507-B5B8-DCAB4AF5ACCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chain", "fundamentals\middleware\index\sample\Chain\Chain.csproj", "{B9420020-947F-4507-B5B8-DCAB4AF5ACCA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChangeTokenSample", "..\fundamentals\primitives\change-tokens\sample\ChangeTokenSample.csproj", "{32CC6683-AD62-46C4-91A9-7E655C925283}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChangeTokenSample", "fundamentals\primitives\change-tokens\sample\ChangeTokenSample.csproj", "{32CC6683-AD62-46C4-91A9-7E655C925283}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoutingSample", "..\fundamentals\routing\sample\RoutingSample\RoutingSample.csproj", "{53804E26-63CF-4AE2-9DC6-2E58805CD351}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoutingSample", "fundamentals\routing\sample\RoutingSample\RoutingSample.csproj", "{53804E26-63CF-4AE2-9DC6-2E58805CD351}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartupFilterSample", "..\fundamentals\startup\sample\StartupFilterSample.csproj", "{11EC5D78-D54F-4F0F-B5A8-0A86AC8EF779}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartupFilterSample", "fundamentals\startup\sample\StartupFilterSample.csproj", "{11EC5D78-D54F-4F0F-B5A8-0A86AC8EF779}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FiltersSample", "..\mvc\controllers\filters\sample\src\FiltersSample\FiltersSample.csproj", "{4FB36954-DF33-4032-926F-7E8F97C622EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FiltersSample", "mvc\controllers\filters\sample\src\FiltersSample\FiltersSample.csproj", "{4FB36954-DF33-4032-926F-7E8F97C622EA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileUploadSample", "..\mvc\models\file-uploads\sample\FileUploadSample\FileUploadSample.csproj", "{2B9EEE9B-0EF9-449B-AA3E-ABC1E879ECA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileUploadSample", "mvc\models\file-uploads\sample\FileUploadSample\FileUploadSample.csproj", "{2B9EEE9B-0EF9-449B-AA3E-ABC1E879ECA4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ResponseFormattingSample", "..\mvc\models\formatting\sample\ResponseFormattingSample.csproj", "{89E687BC-FFAB-4B0E-B2E7-0A77095CF947}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ResponseFormattingSample", "mvc\models\formatting\sample\ResponseFormattingSample.csproj", "{89E687BC-FFAB-4B0E-B2E7-0A77095CF947}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidationSample", "..\mvc\models\validation\sample\ValidationSample.csproj", "{BC8B2B3B-268F-40F1-90DA-C5283BF3BEB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidationSample", "mvc\models\validation\sample\ValidationSample.csproj", "{BC8B2B3B-268F-40F1-90DA-C5283BF3BEB4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViewInjectSample", "..\mvc\views\dependency-injection\sample\src\ViewInjectSample\ViewInjectSample.csproj", "{8E8AA236-0CC0-455D-9BB1-54A6E46CB370}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViewInjectSample", "mvc\views\dependency-injection\sample\src\ViewInjectSample\ViewInjectSample.csproj", "{8E8AA236-0CC0-455D-9BB1-54A6E46CB370}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PartialViewsSample", "..\mvc\views\partial\sample\src\PartialViewsSample\PartialViewsSample.csproj", "{4AB1D222-FEBA-4F53-938A-8A3B0F3E7DF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PartialViewsSample", "mvc\views\partial\sample\src\PartialViewsSample\PartialViewsSample.csproj", "{4AB1D222-FEBA-4F53-938A-8A3B0F3E7DF6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorSample", "..\mvc\views\razor\sample\RazorSample.csproj", "{3C7EBE9B-80A9-4CBE-99C9-90FACC485D7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorSample", "mvc\views\razor\sample\RazorSample.csproj", "{3C7EBE9B-80A9-4CBE-99C9-90FACC485D7B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthoringTagHelpers", "..\mvc\views\tag-helpers\authoring\sample\AuthoringTagHelpers\src\AuthoringTagHelpers\AuthoringTagHelpers.csproj", "{73B2B007-63CF-4DC5-A86C-03E43820BC5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthoringTagHelpers", "mvc\views\tag-helpers\authoring\sample\AuthoringTagHelpers\src\AuthoringTagHelpers\AuthoringTagHelpers.csproj", "{73B2B007-63CF-4DC5-A86C-03E43820BC5A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarterViewComp", "..\mvc\views\view-components\sample\StarterViewComp\StarterViewComp.csproj", "{4A289EE3-49A8-45EE-9D6C-32CCA9A6E904}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarterViewComp", "mvc\views\view-components\sample\StarterViewComp\StarterViewComp.csproj", "{4A289EE3-49A8-45EE-9D6C-32CCA9A6E904}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViewCompFinal", "..\mvc\views\view-components\sample\ViewCompFinal\ViewCompFinal.csproj", "{1249D636-B7AD-4663-AE1C-0A07935F22D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViewCompFinal", "mvc\views\view-components\sample\ViewCompFinal\ViewCompFinal.csproj", "{1249D636-B7AD-4663-AE1C-0A07935F22D1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormsTagHelper", "..\mvc\views\working-with-forms\sample\final\FormsTagHelper.csproj", "{C9A808D3-92E4-4619-B5B0-AD3777D4105F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormsTagHelper", "mvc\views\working-with-forms\sample\final\FormsTagHelper.csproj", "{C9A808D3-92E4-4619-B5B0-AD3777D4105F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcSample", "..\security\anti-request-forgery\sample\MvcSample\MvcSample.csproj", "{13850620-44D9-48D3-8A78-56E4A4A3F115}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcSample", "security\anti-request-forgery\sample\MvcSample\MvcSample.csproj", "{13850620-44D9-48D3-8A78-56E4A4A3F115}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web2FA", "..\security\authentication\2fa\sample\Web2FA\Web2FA.csproj", "{38B2DF91-CE12-41D1-848C-9090C5C15DA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web2FA", "security\authentication\2fa\sample\Web2FA\Web2FA.csproj", "{38B2DF91-CE12-41D1-848C-9090C5C15DA2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebPWrecover", "..\security\authentication\accconfirm\sample\WebPWrecover\WebPWrecover.csproj", "{F1259BFA-C733-43EA-884A-199A9A342247}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebPWrecover", "security\authentication\accconfirm\sample\WebPWrecover\WebPWrecover.csproj", "{F1259BFA-C733-43EA-884A-199A9A342247}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp1", "..\security\authentication\accconfirm\sample\WebApp1\WebApp1.csproj", "{DB558C55-A41A-46F5-8896-BA309C21F63B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp1", "security\authentication\accconfirm\sample\WebApp1\WebApp1.csproj", "{DB558C55-A41A-46F5-8896-BA309C21F63B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CookieSample", "..\security\authentication\cookie\sample\CookieSample.csproj", "{89F0EBDC-EAC9-4164-A341-4C5815B66DCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CookieSample", "security\authentication\cookie\sample\CookieSample.csproj", "{89F0EBDC-EAC9-4164-A341-4C5815B66DCB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityDemo", "..\security\authentication\identity\sample\src\ASPNETCore-IdentityDemoComplete\IdentityDemo\IdentityDemo.csproj", "{C26C450A-CC2C-4D26-97C1-DB81713F60E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityDemo", "security\authentication\identity\sample\src\ASPNETCore-IdentityDemoComplete\IdentityDemo\IdentityDemo.csproj", "{C26C450A-CC2C-4D26-97C1-DB81713F60E7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomIdentityProviderSample", "..\security\authentication\identity-custom-storage-providers\sample\CustomIdentityProviderSample\CustomIdentityProviderSample.csproj", "{A5918848-F3E4-4847-9034-CAA3DBA86AC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomIdentityProviderSample", "security\authentication\identity-custom-storage-providers\sample\CustomIdentityProviderSample\CustomIdentityProviderSample.csproj", "{A5918848-F3E4-4847-9034-CAA3DBA86AC2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoliciesAuthApp1", "..\security\authorization\policies\samples\PoliciesAuthApp1\PoliciesAuthApp1.csproj", "{E45E75DD-A50D-4C95-8290-B6860181B4FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoliciesAuthApp1", "security\authorization\policies\samples\PoliciesAuthApp1\PoliciesAuthApp1.csproj", "{E45E75DD-A50D-4C95-8290-B6860181B4FE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ResourceBasedAuthApp2", "..\security\authorization\resourcebased\samples\ResourceBasedAuthApp2\ResourceBasedAuthApp2.csproj", "{E340281A-280B-4ED9-9E54-D5A3A011AB02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ResourceBasedAuthApp2", "security\authorization\resourcebased\samples\ResourceBasedAuthApp2\ResourceBasedAuthApp2.csproj", "{E340281A-280B-4ED9-9E54-D5A3A011AB02}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactManager", "..\security\authorization\secure-data\samples\final2\ContactManager.csproj", "{B056492F-7FE8-42E2-85AA-2A72B534DD35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactManager", "security\authorization\secure-data\samples\final2\ContactManager.csproj", "{B056492F-7FE8-42E2-85AA-2A72B534DD35}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorsExample1", "..\security\cors\sample\CorsExample1\CorsExample1.csproj", "{8B77834B-3BA6-43DE-A26C-5854C47CDD76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorsExample1", "security\cors\sample\CorsExample1\CorsExample1.csproj", "{8B77834B-3BA6-43DE-A26C-5854C47CDD76}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorsExample2", "..\security\cors\sample\CorsExample2\CorsExample2.csproj", "{20A49219-6468-4E30-B823-E712B39F2283}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorsExample2", "security\cors\sample\CorsExample2\CorsExample2.csproj", "{20A49219-6468-4E30-B823-E712B39F2283}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorsExample3", "..\security\cors\sample\CorsExample3\CorsExample3.csproj", "{85476FB3-ED8A-41DA-8AAA-0FBB87D4F8A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorsExample3", "security\cors\sample\CorsExample3\CorsExample3.csproj", "{85476FB3-ED8A-41DA-8AAA-0FBB87D4F8A3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorsExample4", "..\security\cors\sample\CorsExample4\CorsExample4.csproj", "{D67AD976-FFD5-40FA-94B5-1DB16A3ACD32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorsExample4", "security\cors\sample\CorsExample4\CorsExample4.csproj", "{D67AD976-FFD5-40FA-94B5-1DB16A3ACD32}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorsMVC", "..\security\cors\sample\CorsMVC\CorsMVC.csproj", "{2B473223-9F70-4367-9468-970479B2DE0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorsMVC", "security\cors\sample\CorsMVC\CorsMVC.csproj", "{2B473223-9F70-4367-9468-970479B2DE0C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CookieAuth.Core", "..\security\data-protection\compatibility\cookie-sharing\sample\CookieAuth.Core\CookieAuth.Core.csproj", "{6A2E7308-97E9-4AE4-8442-40B66A08F412}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CookieAuth.Core", "security\data-protection\compatibility\cookie-sharing\sample\CookieAuth.Core\CookieAuth.Core.csproj", "{6A2E7308-97E9-4AE4-8442-40B66A08F412}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CookieAuthWithIdentity.Core", "..\security\data-protection\compatibility\cookie-sharing\sample\CookieAuthWithIdentity.Core\CookieAuthWithIdentity.Core.csproj", "{73F2DC64-FE80-459B-967C-085F91B13692}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CookieAuthWithIdentity.Core", "security\data-protection\compatibility\cookie-sharing\sample\CookieAuthWithIdentity.Core\CookieAuthWithIdentity.Core.csproj", "{73F2DC64-FE80-459B-967C-085F91B13692}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularServerSideRendering", "..\spa\sample\AngularServerSideRendering\AngularServerSideRendering.csproj", "{C2831795-B7B6-4401-A536-1F1B41AD596E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularServerSideRendering", "spa\sample\AngularServerSideRendering\AngularServerSideRendering.csproj", "{C2831795-B7B6-4401-A536-1F1B41AD596E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Middlewares", "Middlewares", "{8576BE65-AEA1-4472-A226-B5BA141B21FC}"
 EndProject
@@ -119,7 +119,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Globalization", "Globalizat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cors", "Cors", "{8D0AC9BC-FC36-45C9-B1B0-4F8E75733BBF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularSample", "..\security\anti-request-forgery\sample\AngularSample\AngularSample.csproj", "{774CC313-B77C-4883-8399-0F01C79A1C67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularSample", "security\anti-request-forgery\sample\AngularSample\AngularSample.csproj", "{774CC313-B77C-4883-8399-0F01C79A1C67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
