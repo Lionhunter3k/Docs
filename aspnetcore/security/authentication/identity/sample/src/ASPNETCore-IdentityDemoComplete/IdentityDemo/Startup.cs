@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
+using System.Collections.Generic;
 
 namespace IdentityDemo
 {
@@ -24,7 +25,8 @@ namespace IdentityDemo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                    options.UseMySql(Configuration.GetConnectionString("MySql")));
+            //options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
@@ -49,16 +51,40 @@ namespace IdentityDemo
                 options.User.RequireUniqueEmail = true;
             });
 
-            services.ConfigureApplicationCookie(options =>
-            {
-                // Cookie settings
-                options.Cookie.HttpOnly = true;
-                options.Cookie.Expiration = TimeSpan.FromDays(150);
-                options.LoginPath = "/Account/Login"; // If the LoginPath is not set here, ASP.NET Core will default to /Account/Login
-                options.LogoutPath = "/Account/Logout"; // If the LogoutPath is not set here, ASP.NET Core will default to /Account/Logout
-                options.AccessDeniedPath = "/Account/AccessDenied"; // If the AccessDeniedPath is not set here, ASP.NET Core will default to /Account/AccessDenied
-                options.SlidingExpiration = true;
-            });
+            //services.ConfigureApplicationCookie(options =>
+            //{
+            //    // Cookie settings
+            //    options.Cookie.HttpOnly = true;
+            //    options.Cookie.Expiration = TimeSpan.FromDays(150);
+            //    options.LoginPath = "/Account/Login"; // If the LoginPath is not set here, ASP.NET Core will default to /Account/Login
+            //    options.LogoutPath = "/Account/Logout"; // If the LogoutPath is not set here, ASP.NET Core will default to /Account/Logout
+            //    options.AccessDeniedPath = "/Account/AccessDenied"; // If the AccessDeniedPath is not set here, ASP.NET Core will default to /Account/AccessDenied
+            //    options.SlidingExpiration = true;
+            //});
+
+            services.AddAuthentication()
+              .AddCookie(options =>
+              {
+                  // Cookie settings
+                  options.Cookie.HttpOnly = true;
+                  options.Cookie.Expiration = TimeSpan.FromDays(150);
+                  options.LoginPath = "/Account/Login"; // If the LoginPath is not set here, ASP.NET Core will default to /Account/Login
+                  options.LogoutPath = "/Account/Logout"; // If the LogoutPath is not set here, ASP.NET Core will default to /Account/Logout
+                  options.AccessDeniedPath = "/Account/AccessDenied"; // If the AccessDeniedPath is not set here, ASP.NET Core will default to /Account/AccessDenied
+                  options.SlidingExpiration = true;
+              })
+              .AddFacebook(facebookOptions =>
+              {
+                  facebookOptions.AppId = Configuration["Authentication:Facebook:AppId"];
+                  facebookOptions.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
+                  facebookOptions.Scope.Add("user_birthday");
+                  facebookOptions.Scope.Add("public_profile");
+                  facebookOptions.Fields.Add("birthday");
+                  facebookOptions.Fields.Add("picture");
+                  facebookOptions.Fields.Add("name");
+                  facebookOptions.Fields.Add("email");
+                  facebookOptions.Fields.Add("gender");
+              });
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();

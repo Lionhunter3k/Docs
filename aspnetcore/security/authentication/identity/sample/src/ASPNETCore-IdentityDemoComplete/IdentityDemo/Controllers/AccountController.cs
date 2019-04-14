@@ -293,7 +293,19 @@ namespace IdentityDemo.Controllers
                 ViewData["ReturnUrl"] = returnUrl;
                 ViewData["LoginProvider"] = info.LoginProvider;
                 var email = info.Principal.FindFirstValue(ClaimTypes.Email);
-                return View("ExternalLogin", new ExternalLoginViewModel { Email = email });
+                var name = info.Principal.FindFirstValue(ClaimTypes.Name);
+                var dob = info.Principal.FindFirstValue(ClaimTypes.DateOfBirth);
+                var gender = info.Principal.FindFirstValue(ClaimTypes.Gender);
+                var identifier = info.Principal.FindFirstValue(ClaimTypes.NameIdentifier);
+                var picture = $"https://graph.facebook.com/{identifier}/picture?type=large";
+                return View("ExternalLogin", new ExternalLoginViewModel
+                {
+                    Email = email,
+                    Name = name, //user Display Name  
+                    DOB = Convert.ToDateTime(dob), //User DOB  
+                    Gender = gender, //User Gender  
+                    Picture = picture //User Profile Image  
+                });
             }
         }
 
@@ -314,6 +326,7 @@ namespace IdentityDemo.Controllers
                 var result = await _userManager.CreateAsync(user);
                 if (result.Succeeded)
                 {
+                    await _userManager.AddClaimsAsync(user, info.Principal.Claims);
                     result = await _userManager.AddLoginAsync(user, info);
                     if (result.Succeeded)
                     {

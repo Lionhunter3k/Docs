@@ -48,7 +48,7 @@ namespace Localization.StarterWeb
                     services.AddLocalization(options => options.ResourcesPath = "Resources");
 
                     services.AddMvc()
-                        .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+                        .AddViewLocalization(LanguageViewLocationExpanderFormat.SubFolder)
                         .AddDataAnnotationsLocalization();
                     #endregion
                     services.AddTransient<IEmailSender, AuthMessageSender>();
