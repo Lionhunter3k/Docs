@@ -297,7 +297,7 @@ namespace IdentityDemo.Controllers
                 var dob = info.Principal.FindFirstValue(ClaimTypes.DateOfBirth);
                 var gender = info.Principal.FindFirstValue(ClaimTypes.Gender);
                 var identifier = info.Principal.FindFirstValue(ClaimTypes.NameIdentifier);
-                var picture = $"https://graph.facebook.com/{identifier}/picture?type=large";
+                var picture = info.Principal.FindFirstValue("image");
                 return View("ExternalLogin", new ExternalLoginViewModel
                 {
                     Email = email,
@@ -322,12 +322,30 @@ namespace IdentityDemo.Controllers
                 {
                     throw new ApplicationException("Error loading external login information during confirmation.");
                 }
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
-                var result = await _userManager.CreateAsync(user);
-                if (result.Succeeded)
+                var user = await _userManager.FindByEmailAsync(model.Email);
+                if(user == null)
                 {
+                    user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                    var result = await _userManager.CreateAsync(user);
+                    if(result.Succeeded)
+                    {
+                        await _userManager.AddClaimsAsync(user, info.Principal.Claims);
+                        result = await _userManager.AddLoginAsync(user, info);
+                        if (result.Succeeded)
+                        {
+                            await _signInManager.SignInAsync(user, isPersistent: false);
+                            _logger.LogInformation("User created an account using {Name} provider.", info.LoginProvider);
+                            return RedirectToLocal(returnUrl);
+                        }
+                    }
+                    AddErrors(result);
+                }
+                else
+                {
+                    var existingClaims = await _userManager.GetClaimsAsync(user);
+                    await _userManager.RemoveClaimsAsync(user, existingClaims);
                     await _userManager.AddClaimsAsync(user, info.Principal.Claims);
-                    result = await _userManager.AddLoginAsync(user, info);
+                    var result = await _userManager.AddLoginAsync(user, info);
                     if (result.Succeeded)
                     {
                         await _signInManager.SignInAsync(user, isPersistent: false);
@@ -335,7 +353,6 @@ namespace IdentityDemo.Controllers
                         return RedirectToLocal(returnUrl);
                     }
                 }
-                AddErrors(result);
             }
 
             ViewData["ReturnUrl"] = returnUrl;

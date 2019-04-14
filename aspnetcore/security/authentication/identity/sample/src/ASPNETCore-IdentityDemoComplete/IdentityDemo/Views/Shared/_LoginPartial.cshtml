@@ -9,8 +9,7 @@
 {
     var info = await UserManager.GetUserAsync(User);
     var claims = await UserManager.GetClaimsAsync(info);
-    var identifier = claims.FirstOrDefault(q => q.Type == ClaimTypes.NameIdentifier)?.Value;
-    var picture = identifier != null ? $"https://graph.facebook.com/{identifier}/picture?type=large" : "https://eitrawmaterials.eu/wp-content/uploads/2016/09/empty-avatar.jpg";
+    var picture = claims.FirstOrDefault(q => q.Type == "image")?.Value ?? "https://eitrawmaterials.eu/wp-content/uploads/2016/09/empty-avatar.jpg";
     <form asp-area="" asp-controller="Account" asp-action="Logout" method="post" id="logoutForm" class="navbar-right">
         <ul class="nav navbar-nav navbar-right">
             <li class="user user-menu">

@@ -1,6 +1,7 @@
 ﻿using IdentityDemo.Data;
 using IdentityDemo.Models;
 using IdentityDemo.Services;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -9,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
+using System.Security.Claims;
+using System.Threading.Tasks;
 
 namespace IdentityDemo
 {
@@ -73,6 +76,21 @@ namespace IdentityDemo
                   options.AccessDeniedPath = "/Account/AccessDenied"; // If the AccessDeniedPath is not set here, ASP.NET Core will default to /Account/AccessDenied
                   options.SlidingExpiration = true;
               })
+              .AddGoogle(o => 
+              {
+                  o.ClientId = Configuration["Authentication:Google:AppId"];
+                  o.ClientSecret = Configuration["Authentication:Google:AppSecret"];
+                  o.UserInformationEndpoint = "https://www.googleapis.com/oauth2/v2/userinfo";
+                  o.Scope.Add("profile");
+                  o.ClaimActions.Clear();
+                  o.ClaimActions.MapJsonKey(ClaimTypes.NameIdentifier, "id");
+                  o.ClaimActions.MapJsonKey(ClaimTypes.Name, "name");
+                  o.ClaimActions.MapJsonKey(ClaimTypes.GivenName, "given_name");
+                  o.ClaimActions.MapJsonKey(ClaimTypes.Surname, "family_name");
+                  o.ClaimActions.MapJsonKey("urn:google:profile", "link");
+                  o.ClaimActions.MapJsonKey(ClaimTypes.Email, "email");
+                  o.ClaimActions.MapJsonKey("image", "picture");
+              })
               .AddFacebook(facebookOptions =>
               {
                   facebookOptions.AppId = Configuration["Authentication:Facebook:AppId"];
@@ -84,6 +102,13 @@ namespace IdentityDemo
                   facebookOptions.Fields.Add("name");
                   facebookOptions.Fields.Add("email");
                   facebookOptions.Fields.Add("gender");
+                  facebookOptions.Events.OnCreatingTicket = (context) =>
+                  {
+                      var identifier = context.Identity.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                      context.Identity.AddClaim(new Claim("image", $"https://graph.facebook.com/{identifier}/picture?type=large"));
+
+                      return Task.CompletedTask;
+                  };
               });
 
             // Add application services.
